@@ -18,11 +18,28 @@ body {
   flex-direction: row-reverse;
 }
 
+.img-section {
+  /* asd */
+}
+
 .hero-img {
-  width: 100%;
+  /* max-width: 100%; */
   object-fit: cover;
   height: 100%;
 }
+
+/* Start Of Content Section  */
+
+.content-section {
+  margin: 5% 10%;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+}
+
 /* 
 .attribution {
   font-size: 11px;
