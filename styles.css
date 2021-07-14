@@ -8,11 +8,26 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  overflow: hidden;
 }
+
+/* Hero Section Start */
+.hero-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+/* 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
