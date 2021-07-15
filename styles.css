@@ -47,7 +47,7 @@ body {
 
 .hero-title {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 1rem;
   margin-bottom: 0;
 }
@@ -60,6 +60,9 @@ body {
 #red-title {
   font-weight: 300;
   color: var(--Desaturated-Red);
+}
+.email-section {
+  border-radius: 50px;
 }
 
 .email-entry {
