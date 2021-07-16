@@ -9,7 +9,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 /* Hero Section Start */
@@ -36,13 +36,13 @@ body {
 
 .content-section::before {
   content: "";
-  background: url(images/bg-pattern-desktop.svg) no-repeat;
+  background-image: url(images/bg-pattern-desktop.svg) no-repeat;
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0%;
   left: 0%;
-  z-index: -1;
+  z-index: 2;
 }
 
 .hero-title {
