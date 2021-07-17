@@ -9,7 +9,14 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
-  overflow: hidden; /*to eliminate scrolling*/
+  /* overflow: hidden; to eliminate scrolling */
+}
+
+/* Navigation  */
+nav img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 /* Hero Section Start */
@@ -27,7 +34,7 @@ body {
 
 /* Start Of Content Section  */
 .content-section {
-  margin: 5% 10%;
+  margin: 10% 10%;
 }
 
 /* This is for the background to be implemented later */
@@ -95,3 +102,20 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Media Queries  */
+
+@media (max-width: 1040px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  nav img {
+    position: relative;
+    margin: 7% 0;
+  }
+} ;
