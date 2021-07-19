@@ -38,7 +38,10 @@
       <form action="#" class="form-section" novalidate>
 
         <div class="email-container">
-          <input class="email-entry" type="email" name="email" id="email" placeholder="Email Address">
+          <input class="email-entry" type="email" name="mail" id="mail" placeholder="Email Address" required
+            minlength="8">
+          <span class="error" aria-live="polite"></span>
+
           <button type="submit" class="arrow-btn"><img src="images/icon-arrow.svg" alt="arrow-img"></button>
         </div>
 
