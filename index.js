@@ -5,6 +5,8 @@ const form  = document.getElementsByTagName('form')[0];
 const email = document.getElementById('mail');
 const emailError = document.querySelector('#mail + span.error');
 
+const emailImg = document.querySelectorAll('span.error-img');
+
 email.addEventListener('input', function (event) {
   // Each time the user types something, we check if the
   // form fields are valid.
@@ -47,5 +49,6 @@ function showError() {
   }
 
   // Set the styling appropriately
+  emailImg.toggle('error-img');
   emailError.className = 'error active';
 }

@@ -132,6 +132,17 @@ input:focus:invalid {
 }
 
 /* This is the style of our error messages */
+.error-img {
+  content: "";
+  background: url(images/icon-error.svg) no-repeat;
+  position: absolute;
+  z-index: 2;
+  top: 0.8rem;
+  height: 100%;
+  width: 100%;
+  left: 21rem;
+}
+
 .error {
   width: 70%;
   padding: 0;
