@@ -141,6 +141,19 @@ input:focus:invalid {
   height: 100%;
   width: 100%;
   left: 21rem;
+  visibility: hidden;
+}
+
+.error-img:active {
+  content: "";
+  background: url(images/icon-error.svg) no-repeat;
+  position: absolute;
+  z-index: 2;
+  top: 0.8rem;
+  height: 100%;
+  width: 100%;
+  left: 21rem;
+  visibility: visible;
 }
 
 .error {

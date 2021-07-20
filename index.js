@@ -38,6 +38,8 @@ function showError() {
     // If the field is empty,
     // display the following error message.
     emailError.textContent = 'You need to enter an e-mail address.';
+    emailImg.className = 'error-img active';
+
   } else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
@@ -49,6 +51,5 @@ function showError() {
   }
 
   // Set the styling appropriately
-  emailImg.toggle('error-img');
   emailError.className = 'error active';
 }
