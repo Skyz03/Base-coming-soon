@@ -5,7 +5,7 @@ const form  = document.getElementsByTagName('form')[0];
 const email = document.getElementById('mail');
 const emailError = document.querySelector('#mail + span.error');
 
-const emailImg = document.querySelectorAll('span.error-img');
+const emailImg = document.getElementById("errorImg")
 
 email.addEventListener('input', function (event) {
   // Each time the user types something, we check if the
@@ -16,9 +16,11 @@ email.addEventListener('input', function (event) {
     // is valid, we remove the error message.
     emailError.textContent = ''; // Reset the content of the message
     emailError.className = 'error'; // Reset the visual state of the message
+    emailImg.style.visibility = "hidden" //This is for img to hide if condition is fine
   } else {
     // If there is still an error, show the correct error
     showError();
+    emailImg.style.visibility = "visible" //This is to show img when error
   }
 });
 
@@ -38,18 +40,26 @@ function showError() {
     // If the field is empty,
     // display the following error message.
     emailError.textContent = 'You need to enter an e-mail address.';
-    emailImg.className = 'error-img active';
-
+    emailImg.style.visibility = "visible"
   } else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
     emailError.textContent = 'Entered value needs to be an e-mail address.';
+    emailImg.style.visibility = "visible"
   } else if(email.validity.tooShort) {
     // If the data is too short,
     // display the following error message.
     emailError.textContent = `Email should be at least ${ email.minLength } characters; you entered ${ email.value.length }.`;
+    emailImg.style.visibility = "visible"
   }
 
   // Set the styling appropriately
   emailError.className = 'error active';
+
+}
+
+function imgToggle(){
+  if (emailImg.style.visibility == "hidden"){
+
+  }
 }
