@@ -152,6 +152,8 @@ input:focus:invalid {
 
 /* Input type End */
 
+/* Media Query for Tab Devices  */
+
 @media (max-width: 1020px) and (min-width: 610px) {
   .hero-section {
     flex-direction: column;
