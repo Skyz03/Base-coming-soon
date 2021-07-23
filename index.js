@@ -1,6 +1,6 @@
 // There are many ways to pick a DOM node; here we get the form itself and the email
 // input box, as well as the span element into which we will place the error message.
-const form  = document.getElementsByTagName('form')[0];
+const form = document.getElementsByTagName('form')[0];
 
 const email = document.getElementById('mail');
 const emailError = document.querySelector('#mail + span.error');
@@ -27,7 +27,7 @@ email.addEventListener('input', function (event) {
 form.addEventListener('submit', function (event) {
   // if the email field is valid, we let the form submit
 
-  if(!email.validity.valid) {
+  if (!email.validity.valid) {
     // If it isn't, we display an appropriate error message
     showError();
     // Then we prevent the form from being sent by canceling the event
@@ -36,30 +36,24 @@ form.addEventListener('submit', function (event) {
 });
 
 function showError() {
-  if(email.validity.valueMissing) {
+  if (email.validity.valueMissing) {
     // If the field is empty,
     // display the following error message.
     emailError.textContent = 'You need to enter an e-mail address.';
     emailImg.style.visibility = "visible"
-  } else if(email.validity.typeMismatch) {
+  } else if (email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
     emailError.textContent = 'Entered value needs to be an e-mail address.';
     emailImg.style.visibility = "visible"
-  } else if(email.validity.tooShort) {
+  } else if (email.validity.tooShort) {
     // If the data is too short,
     // display the following error message.
-    emailError.textContent = `Email should be at least ${ email.minLength } characters; you entered ${ email.value.length }.`;
+    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
     emailImg.style.visibility = "visible"
   }
 
   // Set the styling appropriately
   emailError.className = 'error active';
 
-}
-
-function imgToggle(){
-  if (emailImg.style.visibility == "hidden"){
-
-  }
 }
