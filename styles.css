@@ -155,6 +155,10 @@ input:focus:invalid {
 /* Media Query for Tab Devices  */
 
 @media (max-width: 1020px) and (min-width: 610px) {
+  body {
+    overflow: hidden;
+  }
+
   .hero-section {
     flex-direction: column;
   }
@@ -216,6 +220,10 @@ input:focus:invalid {
 /* Media Queries For Mobile Device */
 
 @media (max-width: 610px) {
+  body {
+    overflow: hidden;
+  }
+
   .hero-section {
     flex-direction: column;
   }
