@@ -33,13 +33,14 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 ![image](https://user-images.githubusercontent.com/42742924/126803527-26dc1c1b-9a47-46b3-8208-d5351cc527df.png)
-![image](https://user-images.githubusercontent.com/42742924/126804120-f5475d7e-67e0-4870-be70-114128d03df7.png)
+![Screenshot 2021-07-24 at 10-11-12 Base Apparel coming soon page](https://user-images.githubusercontent.com/42742924/126857362-7e6c2307-bd1e-475d-bc24-dcceb9c932d7.png)
+
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Skyz03/Base-coming-soon)
-- Live Site URL: [Add live site URL here](https://github.com/Skyz03/Base-coming-soon)
+- Solution URL: [Solution](https://github.com/Skyz03/Base-coming-soon)
+- Live Site URL: [Live Site](https://github.com/Skyz03/Base-coming-soon)
 
 ## My process
 The process includes, implementation of design using CSS FlexBox for the layout plus later the input element was implemented with basic ```input validation of type = Email```. After that JS file was added where form validation was implemented which is available in W3 school. 
@@ -96,21 +97,8 @@ cfunction showError() {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - This helped with the codes for form validation in email section.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Skyz03
