@@ -36,6 +36,7 @@ form.addEventListener('submit', function (event) {
 });
 
 function showError() {
+
   if (email.validity.valueMissing) {
     // If the field is empty,
     // display the following error message.

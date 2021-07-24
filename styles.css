@@ -87,6 +87,8 @@ nav img {
 
 .arrow-btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px 3px hsl(0, 26%, 76%);
 }
 
 /* The Attribute Section for Credits */
